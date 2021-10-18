@@ -1,5 +1,6 @@
 main {
   margin-top: 60px;
+  background-color: beige;
 }
 
 main h1 {
@@ -26,4 +27,34 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+.group img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double { /* makes the picture on top right bigger than one on left*/
+  flex: 2;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10px;
+  }
+
+  .group {
+    flex-direction: row; /* makes it a row when min width 800px */
+  }
 }
